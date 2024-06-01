@@ -7,6 +7,7 @@ import (
 	"github.com/Panitnun-6243/go-basic/calculator"
 	controlflow "github.com/Panitnun-6243/go-basic/controlFlow"
 	"github.com/Panitnun-6243/go-basic/function"
+	"github.com/Panitnun-6243/go-basic/loop"
 	"github.com/labstack/echo/v4"
 )
 
@@ -34,7 +35,9 @@ func main() {
 	}("Tanny")
 	fmt.Println(yourNameResult)
 	// loop
-
+	loop.BasicLoop(5)
+	loop.WhileLoop()
+	loop.EachLoop()
 	// other package
 	e := echo.New()
 	e.GET("/", func(c echo.Context) error {
