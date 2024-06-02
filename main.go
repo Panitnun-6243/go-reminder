@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"net/http"
 
+	arrayandslice "github.com/Panitnun-6243/go-basic/arrayAndSlice"
 	"github.com/Panitnun-6243/go-basic/calculator"
 	controlflow "github.com/Panitnun-6243/go-basic/controlFlow"
 	"github.com/Panitnun-6243/go-basic/function"
@@ -48,6 +49,8 @@ func main() {
 	// pass by reference -> ไม่ต้องสร้างตัวแปร pointer แต่ใช้ address ตรง ๆ ของตัวแปรนั้นเลย
 	pointer.UsePointer(&normalVariable)
 	fmt.Println(normalVariable)
+	// array and slice
+	arrayandslice.ArraySlice()
 	// other package
 	e := echo.New()
 	e.GET("/", func(c echo.Context) error {
