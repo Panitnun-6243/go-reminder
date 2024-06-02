@@ -8,6 +8,7 @@ import (
 	controlflow "github.com/Panitnun-6243/go-basic/controlFlow"
 	"github.com/Panitnun-6243/go-basic/function"
 	"github.com/Panitnun-6243/go-basic/loop"
+	"github.com/Panitnun-6243/go-basic/pointer"
 	"github.com/labstack/echo/v4"
 )
 
@@ -38,6 +39,15 @@ func main() {
 	loop.BasicLoop(5)
 	loop.WhileLoop()
 	loop.EachLoop()
+	// pointer
+	normalVariable := 2
+	var pointerVarialble *int = &normalVariable
+	// pass by pointer -> ต้องสร้างตัวแปร pointer มารับค่า address
+	pointer.UsePointer(pointerVarialble)
+	fmt.Println(*pointerVarialble)
+	// pass by reference -> ไม่ต้องสร้างตัวแปร pointer แต่ใช้ address ตรง ๆ ของตัวแปรนั้นเลย
+	pointer.UsePointer(&normalVariable)
+	fmt.Println(normalVariable)
 	// other package
 	e := echo.New()
 	e.GET("/", func(c echo.Context) error {
