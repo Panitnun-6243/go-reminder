@@ -9,7 +9,7 @@ import (
 	controlflow "github.com/Panitnun-6243/go-basic/controlFlow"
 	"github.com/Panitnun-6243/go-basic/function"
 	"github.com/Panitnun-6243/go-basic/loop"
-	mapobject "github.com/Panitnun-6243/go-basic/map"
+	mapobject "github.com/Panitnun-6243/go-basic/mapobject"
 	"github.com/Panitnun-6243/go-basic/pointer"
 	"github.com/labstack/echo/v4"
 )
