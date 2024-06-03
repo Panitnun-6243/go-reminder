@@ -9,6 +9,7 @@ import (
 	controlflow "github.com/Panitnun-6243/go-basic/controlFlow"
 	"github.com/Panitnun-6243/go-basic/function"
 	"github.com/Panitnun-6243/go-basic/loop"
+	mapobject "github.com/Panitnun-6243/go-basic/map"
 	"github.com/Panitnun-6243/go-basic/pointer"
 	"github.com/labstack/echo/v4"
 )
@@ -51,11 +52,12 @@ func main() {
 	fmt.Println(normalVariable)
 	// array and slice
 	arrayandslice.ArraySlice()
+	// map
+	mapobject.MapObject()
 	// other package
 	e := echo.New()
 	e.GET("/", func(c echo.Context) error {
 		return c.String(http.StatusOK, "Hello, World!")
 	})
 	e.Logger.Fatal(e.Start(":1323"))
-
 }
