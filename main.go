@@ -6,6 +6,7 @@ import (
 
 	arrayandslice "github.com/Panitnun-6243/go-basic/arrayAndSlice"
 	"github.com/Panitnun-6243/go-basic/calculator"
+	"github.com/Panitnun-6243/go-basic/channel"
 	controlflow "github.com/Panitnun-6243/go-basic/controlFlow"
 	"github.com/Panitnun-6243/go-basic/function"
 	"github.com/Panitnun-6243/go-basic/generics"
@@ -66,6 +67,8 @@ func main() {
 	generics.UseGeneric()
 	// goroutine
 	goroutine.UseGouroutine()
+	// channel
+	channel.UseChannel()
 	// other package
 	e := echo.New()
 	e.GET("/", func(c echo.Context) error {
