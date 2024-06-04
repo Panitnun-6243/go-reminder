@@ -9,6 +9,7 @@ import (
 	controlflow "github.com/Panitnun-6243/go-basic/controlFlow"
 	"github.com/Panitnun-6243/go-basic/function"
 	"github.com/Panitnun-6243/go-basic/generics"
+	"github.com/Panitnun-6243/go-basic/goroutine"
 	"github.com/Panitnun-6243/go-basic/interfaces"
 	"github.com/Panitnun-6243/go-basic/loop"
 	mapobject "github.com/Panitnun-6243/go-basic/mapobject"
@@ -63,6 +64,8 @@ func main() {
 	interfaces.UseInterface()
 	// generic
 	generics.UseGeneric()
+	// goroutine
+	goroutine.UseGouroutine()
 	// other package
 	e := echo.New()
 	e.GET("/", func(c echo.Context) error {
