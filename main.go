@@ -8,6 +8,7 @@ import (
 	"github.com/Panitnun-6243/go-basic/calculator"
 	controlflow "github.com/Panitnun-6243/go-basic/controlFlow"
 	"github.com/Panitnun-6243/go-basic/function"
+	"github.com/Panitnun-6243/go-basic/interfaces"
 	"github.com/Panitnun-6243/go-basic/loop"
 	mapobject "github.com/Panitnun-6243/go-basic/mapobject"
 	"github.com/Panitnun-6243/go-basic/pointer"
@@ -57,6 +58,8 @@ func main() {
 	mapobject.MapObject()
 	// struct
 	structs.UseStruct()
+	// interface
+	interfaces.UseInterface()
 	// other package
 	e := echo.New()
 	e.GET("/", func(c echo.Context) error {
