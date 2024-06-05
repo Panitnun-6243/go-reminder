@@ -14,6 +14,7 @@ import (
 	"github.com/Panitnun-6243/go-basic/interfaces"
 	"github.com/Panitnun-6243/go-basic/loop"
 	mapobject "github.com/Panitnun-6243/go-basic/mapobject"
+	"github.com/Panitnun-6243/go-basic/mutex"
 	"github.com/Panitnun-6243/go-basic/pointer"
 	"github.com/Panitnun-6243/go-basic/structs"
 	"github.com/labstack/echo/v4"
@@ -69,6 +70,8 @@ func main() {
 	goroutine.UseGouroutine()
 	// channel
 	channel.UseChannel()
+	// mutex
+	mutex.UseMutex()
 	// other package
 	e := echo.New()
 	e.GET("/", func(c echo.Context) error {
